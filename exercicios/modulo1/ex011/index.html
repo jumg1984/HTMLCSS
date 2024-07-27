@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir este site em vários dispositivos diferentes ou simplesmente aumente e diminua o seu navegador.</p>
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/fotop.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/fotom.png" type="image/png">
+        <img src="imagens/fotog.png" alt="imagem flexível">
+    </picture>
+    <h1>Testando com imagem dinâmica</h1>
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/jg-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/jg-m.png" type="image/png">
+        <img src="imagens/jg-g.png" alt="juliano">
+    </picture>
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudio utilizando HTML5</p>
+    <audio src="midia/Artemas - i like the way you kiss me (lyric video).mp3" controls autoplay></audio>
+    <p>Agora carregamos o áudio passando parâmetros para que outros formatos sejam carregados</p>
+    <!--formatos áudio: mp3,wav,ogg-->
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/Artemas - i like the way you kiss me (lyric video).mp3" type="audio/mpeg">
+        <source src="midia/Artemas - i like the way you kiss me (lyric video).ogg" type="audio/ogg">
+        <source src="midia/Artemas - i like the way you kiss me (lyric video).wav" type="audio/wav">
+     <p>Parece que a música não está tocando. <a href="midia/Artemas - i like the way you kiss me (lyric video).mp3">Clique aqui</a> para fazer o download em mp3</p>
+    </audio>
+
+    
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links roxette</title>
+    <style>
+      /*seletores personalizados
+        
+         # = id
+         . = class
+         : = pseudoclass
+         :: = pseudoelement
+          > = children*/
+      
+      body{
+         font-family: Arial, Helvetica, sans-serif;
+      }
+      a{
+         color: red;
+         text-decoration: none;
+         font-weight: bold;
+      }
+      a:visited{
+         color: black;
+      }
+      a:hover{
+         color: blueviolet;
+         text-decoration: underline;
+      }
+      a:active{
+         color: yellow;
+      }
+      .melhor{
+         background-color: rgb(227,175,175);
+      }
+      .melhor::before{
+         content: '***** ';
+      }
+      .melhor::after{
+         content: ' (for sure)';
+      }
+    </style>
+
+</head>
+<body>
+   <h1>Estes são links para músicas de origem nórdica que eu amo:</h1>
+   <ul>
+      <li class="melhor"><a href="https://www.vagalume.com.br/roxette/it-must-have-been-love.html" target="_blank">It must have been love</a></li>
+      <li><a href="https://www.vagalume.com.br/roxette/listen-to-your-heart.html" target="_blank">Listen to your heart</a></li>
+      <li><a href="https://www.vagalume.com.br/a-ha/take-on-me.html" target="_blank">Take on me</a></li>
+      <li class="melhor"><a href="https://www.vagalume.com.br/a-ha/stay-on-these-roads.html" target="_blank">Stay on these roads</a></li>
+   </ul>
+    
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        h1{   /*elemento box level */
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;/*as 3 linhas acima em shorthand seria: 
+            border: 10px solid darkslategray; (nessa ordem) */
+            padding-top: 20px;
+            padding-right: 20px;
+            padding-bottom: 40px;
+            padding-left: 20px;             /*as 3 linhas acima em shorthand seria: 
+               padding: 20px 20px 40px 20px; (nessa ordem)
+               caso todas as medidas sejam iguais, informa o valor só uma vez:
+              ex= padding: 20px 
+              se os valores top e bottom forem iguais e os valores right e left forem iguais é só passar os 2 parametros: 
+              padding: 10px 20px;*/
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 40px;
+            margin-left: 10px; /*as 3 linhas acima em shorthand seria: 
+               margin: 10px 10px 40px 10px; (nessa ordem) */
+               /*caso eu queira que as margens da esquerda e direita se ajustem automaticamente a página do navegador: 
+               border: 10px auto 10px auto; (nessa ordem) */
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;/*as 3 linhas acima em shorthand seria: 
+               outline: 7px dashed salmon; (nessa ordem) */
+            
+        }
+        a{/* elemento inline level*/
+            border-width: 3px;
+            border-style: solid;
+            border-color: red;
+            padding-top: 4px;
+            padding-bottom: 3px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Exemplo de caixa box level</h1>
+    <p>Parágrafos também são exemplos de box level, mas os <a href="#">links são exemplos de caixas inline level </a>.Vamos ver como tudo isso funciona. </p>
+</body>
+</html>
