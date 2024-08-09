@@ -10,51 +10,60 @@
         }
         table{
             border-collapse: collapse;
-            width: 300px;
+            width: 500px;
             text-align: center;
         }
+        caption{
+            font-size: 1.2em;
+            font-weight: bolder;
+            color: red;
+            padding: 8px;
+        }
         td, th{
-            border: 1px solid black;
+            border: 1.5px solid darkblue;
             padding: 10px;
         }
         td:hover{
-            background-color: yellow;
+            background-color: greenyellow;
         }
         th:hover{
-            background-color: yellowgreen;
+            background-color: blue;
         }
-        </style>
+    </style>
 </head>
 <body>
-    <h1>Mesclagem de células desafio 1</h1>
+    <h1>Challenge 1</h1>
     <table>
+        <caption>Mesclagem de células</caption>
         <tr>
-            <td>1</td>
-            <td>2</td>
-            <td rowspan="2">3</td>
-            <td>4</td>
+            <th colspan="4">Roman numbers</th>
         </tr>
         <tr>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-            
+            <td>I</td>
+            <td>II</td>
+            <td rowspan="2">III</td>
+            <td>IV</td>
         </tr>
         <tr>
-            <td colspan="3">8</td>
-            <td>9</td>
-            
+            <td>V</td>
+            <td>VI</td>
+            <td>VII</td>
         </tr>
         <tr>
-            <td rowspan="2">10</td>
-            <td colspan="2">11</td>
-            <td>12</td>
+            <td colspan="3">VIII</td>
+            <td>IX</td>
         </tr>
         <tr>
-            <td>13</td>
-            <td>14</td>
-            <td>15</td>
+            <td rowspan="2">X</td>
+            <td colspan="2">XI</td>
+            <td>XII</td>
+        </tr>
+        <tr>
+            <td>XIII</td>
+            <td>XIV</td>
+            <td>XV</td>
         </tr>
     </table>
+    
 </body>
 </html>

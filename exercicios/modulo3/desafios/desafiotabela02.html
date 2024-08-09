@@ -5,51 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio mesclagem de células</title>
     <style>
-         body{
+        body{
             font-family: Arial, Helvetica, sans-serif;
+            background-image: url('cavaleiros.png');
+            height: 98vh;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size:cover;
+                       
         }
+        
         table{
             border-collapse: collapse;
-            width: 300px;
+            width: 500px;
             text-align: center;
         }
+        caption{
+            font-size: 1.3em;
+            font-weight: bold;
+            color: gold;
+            padding: 10px;
+            background-color: gray;
+        }
+        caption:hover{
+            background-color: goldenrod;
+            color: red;
+        }
         td, th{
-            border: 1px solid black;
-            padding: 5px;
+            border: 3px solid goldenrod;
+            padding: 8px;
         }
         td:hover{
-            background-color: yellowgreen;
-        }
-        th:hover{
-            background-color: yellowgreen;
+            background-color: lightblue;
+            color: red;
         }
     </style>
 </head>
 <body>
-    <h1>Mesclagem de células desafio 2</h1>
+    <h1>Challenge II</h1>
+    <h2>Mesclagem de células</h2>
     <table>
+        <caption>Cavaleiros de ouro</caption>
         <tr>
-            <td colspan="4">A</td>
-            <td rowspan="4">B</td>
+            <td colspan="4">Mu</td>
+            <td rowspan="4">Aldebaran</td>
         </tr>
         <tr>
-            <td rowspan="4">C</td>
-            <td>D</td>
-            <td>E</td>
-            <td>F</td>
+            <td rowspan="4">Saga</td>
+            <td>Máscara da morte</td>
+            <td>Aioria</td>
+            <td>Shaka</td>
         </tr>
         <tr>
-            <td>G</td>
-            <td>H</td>
-            <td>I</td>
+            <td>Dokho</td>
+            <td>Miro</td>
+            <td>Aiorus</td>
         </tr>
         <tr>
-            <td>J</td>
-            <td>L</td>
-            <td>M</td>
+            <td>Shura</td>
+            <td>Kamus</td>
+            <td>Afrodite</td>
         </tr>
         <tr>
-            <td colspan="4">N</td>
+            <td colspan="4">Mestre</td>
         </tr>
     </table>
 </body>
