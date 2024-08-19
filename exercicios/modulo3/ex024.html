@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de Iframe</title>
+    <style>
+        body{
+            background-color: rgb(98, 67, 67);
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando o uso de um Iframe</h1>
+    <!-- <p>Acessando o site do <a href="https://www.cursoemvideo.com" target="_blank">curso em vídeo</a> para aprender a programar.</p>
+      no exemplo acima eu crio um link para o site.
+      agora será criado um iframe: -->
+      <p>Acessando o site do 
+        
+        <iframe src="https://www.cursoemvideo.com" frameborder="0" height="500">
+            
+            <!--deixo um link dentro do iframe pois se o navegador for imcompatível com o iframe o que vai aparecer é o  link. Tudo escrito dentro do espaço do iframe só aparece caso o iframe não abra-->
+            <a href="https://www.cursoemvideo.com" target="_blank">Curso em vídeo</a>
+        </iframe>
+        
+        para aprender a programar.</p>
+
+        <p>O repositório do guanabara
+            
+            <iframe src="https://gustavoguanabara.github.io" frameborder="0" height="500" width="500">
+                <a href="https://gustavoguanabara.github.io"> no github</a>
+            </iframe>
+            também é legal</p>
+
+            <!--tamanho padrão do iframe é de 300X150-->
+</body>
+</html>
